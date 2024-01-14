@@ -1,0 +1,129 @@
+.todo-input-section {
+ display: grid;
+ grid-template-columns: repeat(2,2fr 1fr) ;
+ height: 52px;
+ column-gap: 20px;
+ align-items: center;
+ justify-items: center;
+}
+
+.todo-input-section input[type="text"] {
+ flex-grow: 1;
+ padding: 16px;
+ padding-right: 30px;
+ border: none;
+ background-color: rgb(33, 33, 33);
+ color: #fff;
+ font-size: 16px;
+ border-radius: 30px;
+ transition: background-color 0.3s ease;
+ box-shadow: 9px 21px 30px -19px rgba(0, 0, 0, 0.63);
+}
+.todo-input-section input[type="text"]::placeholder {
+ color: #ddd;
+}
+.todo-input-section input[type="text"]:focus {
+ outline: none;
+ background-color: #555;
+}
+.todo-input-section #search {
+ width:100%;
+ height: 100%;
+ position: relative;
+}
+.todo-input-section #search>span{
+ color: whitesmoke;
+ font-size: 20px;
+ font-weight: bolder;
+ position: absolute;
+ width: 16px;
+ height: 16px;
+ z-index: 10;
+ right: 2.5%;
+ top: 22%;
+ display: none;
+ cursor: pointer;
+}
+.todo-input-section #search>input:not(:placeholder-shown) ~ span {
+ display: block;
+}
+
+.todo-input-section .add {
+ width:100%;
+ height: 100%;
+ border: none;
+ background-color: rgb(33, 33, 33);
+ color: #ffffff;
+ font-size: 16px;
+ border-radius: 20px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ box-shadow: 9px 21px 30px -19px rgba(0, 0, 0, 0.63);
+}
+
+.todo-input-section .update {
+    width:100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(33, 33, 33);
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 9px 21px 30px -19px rgba(0, 0, 0, 0.63);
+   }
+
+.todo-input-section button:hover {
+ outline: none;
+ background-color: #555;
+}
+.todo-input-section button[type="text"]::placeholder {
+ color: #ddd;
+}
+
+.todo-input-section .add.hide {
+ display: none;
+}
+
+
+.todoBackOfItem {
+    display: grid;
+    grid-template-columns: 5fr 1.5fr 0.5fr 0.5fr ;
+    align-items: center;
+    padding: 7px 30px;
+    background-color: rgb(38 37 37);
+    border-radius: 80px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todoBackOfItem span {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.todoBackOfItem .todo-text {
+    color: #fff !important;
+    margin-right: auto;
+    font-size: 16px !important;
+}
+
+.todoBackOfItem .span-button {
+    margin-left: auto;
+    display: block;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px !important;
+    
+}
+
+.todoBackOfItem .span-button:hover {
+    background-color: rgb(52, 53, 53);
+    border-radius: 80px;
+    /* padding: 4px 6px; */
+    color: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
